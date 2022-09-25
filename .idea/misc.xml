@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/cheet/AndroidStudioProjects/Vent/app/src/main/res/drawable/round_corners.xml" value="0.2265" />
         <entry key="..\:/Users/cheet/AndroidStudioProjects/Vent/app/src/main/res/drawable/rounded.xml" value="0.124" />
-        <entry key="..\:/Users/cheet/AndroidStudioProjects/Vent/app/src/main/res/layout/activity_info.xml" value="0.1" />
+        <entry key="..\:/Users/cheet/AndroidStudioProjects/Vent/app/src/main/res/layout/activity_info.xml" value="0.2" />
         <entry key="..\:/Users/cheet/AndroidStudioProjects/Vent/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/cheet/AndroidStudioProjects/Vent/app/src/main/res/layout/activity_notes.xml" value="0.152" />
         <entry key="..\:/Users/cheet/AndroidStudioProjects/Vent/app/src/main/res/layout/fragment_blank.xml" value="0.11302083333333333" />

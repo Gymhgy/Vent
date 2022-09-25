@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         clickButton.setOnClickListener(v -> {
             this.startActivity(new Intent(this, InfoActivity.class));
         });
+
     }
 
     private final BottomNavigationView.OnNavigationItemSelectedListener navListener = item -> {
