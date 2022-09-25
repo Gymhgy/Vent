@@ -1,11 +1,16 @@
 package com.example.vent;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -33,13 +38,12 @@ public class MainActivity extends AppCompatActivity {
         // fragment should be shown to the user
         // in this case it is algorithm fragment
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
-        Set<String> strings = new HashSet<>();
-        strings.add("09/20/2022|My kids don't have enough to eat\nAnd I can't do ANYTHING");
-        strings.add("09/21/2022|I care BUT I DONT CARE AT THE SAME TIME\nWHYWHYWHY");
-        strings.add("09/23/2022|I TAKE THE TRAIN FOR 3 HRS\nI WORK for TEN HOURS A DAY\nIT'S NOT FOR SAFETY REASONS iF THE TRAIN GOES 70mph!!");
-        SharedPreferences prefs = getSharedPreferences("public", MODE_PRIVATE);
-        prefs.edit().putStringSet("vents", strings).apply();
+        Button clickButton = (Button) findViewById(R.id.infoButton);
+        clickButton.setOnClickListener(v -> {
+            this.startActivity(new Intent(this, InfoActivity.class));
+        });
     }
+
     private final BottomNavigationView.OnNavigationItemSelectedListener navListener = item -> {
         // By using switch we can easily get
         // the selected fragment
